@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EEE;
+    font-family: sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #EEE;
+}
+
+div {
+    display: block;
+}
+
+.logo {
+    width: 60vw;
+}
+
+.logo > img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+}
+
+nav {
+    font-weight: 400px;
+    display: block;
+}
+
+nav > ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-link, footer > ul > li > a {
+    color: #000;
+    text-decoration: none;
+}
+
+#subscription-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+}
+
+#subscription-email > h2 {
+    word-wrap: break-word;
+    margin-bottom: 20px;
+}
+
+form {
+    display: block;
+}
+
+#subscription-email input[type="email"] {
+    width: 100%;
+    max-width: 275px;
+    padding: 5px;
+}
+
+#subscription-email input[type="submit"] {
+    width: 100%;
+    max-width: 150px;
+    background-color: #F1C40F;
+    border: 0;
+    margin: 15px 0;
+    height: 30px;
+}
+
+.btn {
+    padding: 0 20px;
+    font-size: 1em;
+    font-weight: 900;
+    border-radius: 2px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+#grid {
+    display: flex;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: darkorange;
+    height: 125px;
+    width: 15vw;
+}
+
+.fa-3x {
+    font-size: 3em;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 10px;
+}
+
+#how_it_works {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#how_it_works > iframe {
+    max-width: 550px;
+    width: 100%;
+}
+
+iframe {
+    height: 330px;
+}
+
+#pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.subscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 10px;
+}
+
+#subscription-title {
+    background-color: #DDDDDD;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 15px;
+}
+
+#subscription-price {
+    margin-top: 15px;
+}
+
+.subscription > ul {
+    display: block;
+    padding: 15px 0;
+
+}
+
+.subscription > ul > li {
+    padding: 5px 0;
+}
+
+.subscription > button {
+    height: 40px;
+    font-size: 1em;
+    border: none;
+    margin: 15px 0;
+    background-color: #F1C40F;
+    font-weight: 400;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #DDDDDD;
+    padding: 20px;
+}
+
+footer > ul, footer > p {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer > ul > li {
+    padding: 0 10px;
+}
+
+footer > p {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #444444;
+}
+
+/* @Media need to change for navigation bar, features and pricing for their width */
+
+@media only screen and (max-width: 800px) {
+    #pricing {
+        flex-direction: column;
+    }
+
+    .subscription {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .logo {
+        margin-top: 15px;
+        width: 100%;
+        position: relative;
+    }
+    nav {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding: 0 50px;
+    }
+
+    nav > ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        padding-bottom: 5px;
+    }
+
+    #subscription-email {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    .logo > img {
+        margin: 0 auto;
+    }
+
+    #subscription-email {
+        margin-top: 120px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #features .content{
+        text-align: center;
+        width: 100%;
+    }
+
+    #features .icon {
+        display: none;
+    }
+}
