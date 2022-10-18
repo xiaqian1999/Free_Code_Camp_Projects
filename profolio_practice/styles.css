@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #BE3144;
+    padding: 1.25rem;
+    position: fixed;
+    width: 100%;
+    border-bottom: #1f1d1d 1px solid;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding-right: 1rem;
+    margin-right: 2rem;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #292A2D;
+    top: 0;
+    left: 0;
+}
+
+#about h1{
+    color: white;
+    font-size: 4rem;
+}
+
+#about p {
+    color: #BE3144;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1.75rem;
+}
+
