@@ -50,3 +50,35 @@ nav a {
     font-size: 1.75rem;
 }
 
+#work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #46567D;
+    color: white;
+    padding: 6rem 2rem;
+}
+
+#project-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.project-img {
+    width: 100%;
+    height: calc(100% - 4.8rem);
+    object-fit: cover;
+}
+
+.project-link {
+    background-color: #303941;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
